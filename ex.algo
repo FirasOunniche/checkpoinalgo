@@ -1,0 +1,25 @@
+ALGORITHM algorithm_checkpoint
+VAR
+ ch:= STRING
+ i,v,c: INTEGER :=0
+ w:STRING := 0
+BEGIN
+ write('ekteb jomla')
+ read(ch)
+FOR i FROM 0 TO ch.length-1 STEP 1  DO
+    IF (ch[i]in['a','e','i','y','o','u','A','E','I','Y','O','U'])  THEN
+        v:=v+1
+        END_IF
+           IF (phrase[i] = " " OR phrase[i] = "." )THEN 
+
+       w=w+1
+    END_IF
+    IF (ch[i]in['a'..'z','A'..'Z']) THEN
+    c:=c+1
+    END_IF
+    
+END_FOR
+ write(v)
+ write(w)
+ write(c)
+END
